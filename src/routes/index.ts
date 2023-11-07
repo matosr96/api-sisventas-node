@@ -4,9 +4,16 @@ import { RutasUsuario } from "./usuario";
 import { RutasProducto } from "./producto";
 import { RutasCategoria } from "./categoria";
 import { RutasVenta } from "./venta";
+import { userRoutes } from "./user";
 
 // Combinamos todas las rutas en un arreglo.
-const routes: RouteOptions[] = [...RutasUsuario, ...RutasProducto, ...RutasCategoria, ...RutasVenta];
+const routes: RouteOptions[] = [
+  ...RutasUsuario,
+  ...RutasProducto,
+  ...RutasCategoria,
+  ...RutasVenta,
+  ...userRoutes,
+];
 
 // Definimos una función para registrar las rutas en una instancia de Fastify.
 export const registerRoutes = (fastify: FastifyInstance) => {

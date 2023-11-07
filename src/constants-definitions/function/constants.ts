@@ -4,6 +4,7 @@ export enum Collection {
   CATEGORIAS = "categorias",
   PRODUCTOS = "productos",
   VENTAS = "ventas",
+  USERS = "users"
 }
 
 export enum MetodosPeticion {
