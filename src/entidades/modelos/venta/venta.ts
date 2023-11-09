@@ -7,6 +7,7 @@ interface dataProducto {
 
 export interface Venta {
   uuid: string;
+  user: string;
   fecha_venta: Date;
   total_venta: number;
   producto: dataProducto[];
