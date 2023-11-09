@@ -1,5 +1,6 @@
 interface dataProducto {
   uuid: string;
+  vendedor: string;
   nombre: string;
   cantidad: number;
   precio: number;
